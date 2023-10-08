@@ -19,9 +19,12 @@ export default function Board() {
         }else return <h1 key={idx} className='col-4 text-center'  onClick={() => {
               microBoard.map((e, index) => {
                 if(idx == index){
+                  console.log(idx == index)
                   const copy = [...microBoard]
-                  copy[idx].square = !copy[idx].square.isPlayed
-                  setMicroBoard([...copy])
+                  console.log(copy)
+                  copy[idx].isPlayed = true
+                  console.log(copy)
+                  // setMicroBoard([...copy])
                 }
               })
             }}>empty</h1>

@@ -9,8 +9,16 @@ export function GameProvider(props) {
       this.isPlayed = isPlayed;
     }
   }
-  const square = new Square(isPlayer1, false)
-    const [microBoard, setMicroBoard] = useState([square, square, square, square, square ,square, square, square, square])
+  const square1 = new Square(isPlayer1, false)
+  const square2 = new Square(isPlayer1, false)
+  const square3 = new Square(isPlayer1, false)
+  const square4 = new Square(isPlayer1, false)
+  const square5 = new Square(isPlayer1, false)
+  const square6 = new Square(isPlayer1, false)
+  const square7 = new Square(isPlayer1, false)
+  const square8 = new Square(isPlayer1, false)
+  const square9 = new Square(isPlayer1, false)
+  const [microBoard, setMicroBoard] = useState([square1, square2, square3, square4, square5 ,square6, square7, square8, square9])
   return (
     <GameContext.Provider
       value={{microBoard, setMicroBoard}}
