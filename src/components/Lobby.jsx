@@ -10,7 +10,8 @@ const Lobby = () => {
           id="exampleFormControlInput1"
           placeholder="enter game lobby"
         />
-        <button className="btn btn-primary">Join</button>
+        <button className="btn btn-primary" onClick={{}}>Join</button>
+        <button className="btn btn-primary">Create</button>
       </div>
     </>
   );
