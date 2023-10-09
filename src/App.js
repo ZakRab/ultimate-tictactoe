@@ -1,10 +1,11 @@
-import GameBoard from './components/GameBoard'
-import './App.css';
-import Lobby from './components/Lobby'
+import GameBoard from "./components/GameBoard";
+import "./App.css";
+import Lobby from "./components/Lobby";
+import RoundCounter from "./components/RoundCounter";
 function App() {
   return (
     <div className="bg-body-secondary container">
-      <h1 className='text-center'>Tic-Tac-Toe</h1>
+      <RoundCounter></RoundCounter>
       <GameBoard></GameBoard>
       <Lobby></Lobby>
     </div>
