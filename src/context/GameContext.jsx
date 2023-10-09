@@ -3,6 +3,7 @@ export const GameContext = React.createContext(null);
 
 export function GameProvider(props) {
   const [isPlayer1, setIsPlayer1] = useState(false)
+  const [round, setRound] = useState(1)
   class Square {
     constructor(player, isPlayed) {
       this.player = player;
@@ -21,7 +22,7 @@ export function GameProvider(props) {
   const [microBoard, setMicroBoard] = useState([square1, square2, square3, square4, square5 ,square6, square7, square8, square9])
   return (
     <GameContext.Provider
-      value={{microBoard, setMicroBoard}}
+      value={{microBoard, setMicroBoard, isPlayer1,setIsPlayer1, round, setRound}}
     >
       {props.children}
     </GameContext.Provider>
